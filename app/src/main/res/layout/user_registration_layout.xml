@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sourcecode.smarthospital.RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/scroll1"
+        android:background="@color/colorAqua">
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear1">
+
+                <TextView
+                    android:id="@+id/textFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:padding="3dp"
+                    android:text="First Name"
+                    android:gravity="fill_horizontal"
+                    android:textSize="15sp"
+                    app:layout_constraintHorizontal_bias="0.162"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear2"
+                    app:layout_constraintVertical_bias="0.202" />
+
+                <EditText
+                    android:id="@+id/editFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:gravity="fill_horizontal"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    app:layout_constraintLeft_toRightOf="@+id/textName"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear2"
+                    tools:layout_editor_absoluteX="152dp"
+                    tools:layout_editor_absoluteY="88dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <TextView
+                    android:id="@+id/textLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:padding="3dp"
+                    android:text="Last Name"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintHorizontal_bias="0.162"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear21"
+                    app:layout_constraintVertical_bias="0.202" />
+
+                <EditText
+                    android:id="@+id/editLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/textLastName"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear21"
+                    tools:layout_editor_absoluteX="152dp"
+                    tools:layout_editor_absoluteY="88dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear21">
+
+                <TextView
+                    android:id="@+id/textContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:padding="3dp"
+                    android:text="Contact Number"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/editPass"
+                    app:layout_constraintTop_toBottomOf="@+id/linear3"
+                    tools:layout_editor_absoluteY="180dp" />
+
+
+                <EditText
+                    android:id="@+id/editContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="contact number"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/textPass"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear3"
+                    tools:layout_editor_absoluteX="141dp"
+                    tools:layout_editor_absoluteY="169dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <TextView
+                    android:id="@+id/textEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:padding="3dp"
+                    android:text="Email Id"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/editPass1"
+                    app:layout_constraintTop_toBottomOf="@+id/linear4"
+                    tools:layout_editor_absoluteY="180dp" />
+
+
+                <EditText
+                    android:id="@+id/editEmailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="email Id"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/textPass1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear4"
+                    tools:layout_editor_absoluteX="141dp"
+                    tools:layout_editor_absoluteY="169dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <TextView
+                    android:id="@+id/textCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:padding="3dp"
+                    android:text="City"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/editPass2"
+                    app:layout_constraintTop_toBottomOf="@+id/linear5"
+                    tools:layout_editor_absoluteY="180dp" />
+
+
+                <EditText
+                    android:id="@+id/editCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="city"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/textPass2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear5"
+                    tools:layout_editor_absoluteX="141dp"
+                    tools:layout_editor_absoluteY="169dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <TextView
+                    android:id="@+id/textState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:padding="3dp"
+                    android:text="state"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/editPass3"
+                    app:layout_constraintTop_toBottomOf="@+id/linear6"
+                    tools:layout_editor_absoluteY="180dp" />
+
+
+                <EditText
+                    android:id="@+id/editState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="state"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/textPass3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear6"
+                    tools:layout_editor_absoluteX="141dp"
+                    tools:layout_editor_absoluteY="169dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <TextView
+                    android:id="@+id/textPinCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:padding="3dp"
+                    android:text="PinCode"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/editPinCode"
+                    app:layout_constraintTop_toBottomOf="@+id/linear16"
+                    tools:layout_editor_absoluteY="180dp" />
+
+                <EditText
+                    android:id="@+id/editPinCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="pincode"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/textPinCode"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear16"
+                    tools:layout_editor_absoluteX="141dp"
+                    tools:layout_editor_absoluteY="169dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <TextView
+                    android:id="@+id/textCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:padding="3dp"
+                    android:text="Country"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/editState"
+                    app:layout_constraintTop_toBottomOf="@+id/linear61"
+                    tools:layout_editor_absoluteY="180dp" />
+
+                <EditText
+                    android:id="@+id/editCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="country"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:gravity="fill_horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/textState"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear61"
+                    tools:layout_editor_absoluteX="141dp"
+                    tools:layout_editor_absoluteY="169dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/regbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:padding="3dp"
+                android:text="Register"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:background="@color/colorOlive"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear6"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="258dp" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

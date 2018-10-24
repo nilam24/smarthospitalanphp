@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SmartHospital</string>
+
+    <string name="title">Admin Login</string>
+    <string name="doctitle">Doctor Login</string>
+    <string name="pattitle">User Login</string>
+
+    <string name="name">User Name</string>
+    <string name="password">Password</string>
+    <string name="button">Login</string>
+    <string name="button2">Register</string>
+    
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="contact">Contact</string>
+    <string name="email">Email Id</string>
+
+    <string name="confpas">Confirm Pass</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pin">Pin</string>
+    <string name="country">Country</string>
+
+</resources>
